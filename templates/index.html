@@ -219,7 +219,7 @@ var helper = (function() {
  */
 $(document).ready(function() {
   $('#disconnect').click(helper.disconnectServer);
-  if ($('[data-clientid="YOUR_CLIENT_ID"]').length > 0) {
+  if ($("[data-clientid='{{ CLIENT_ID }}']").length > 0) {
     alert('This sample requires your OAuth credentials (client ID) ' +
         'from the Google APIs console:\n' +
         '    https://code.google.com/apis/console/#:access\n\n' +
